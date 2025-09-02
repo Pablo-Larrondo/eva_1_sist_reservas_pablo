@@ -1,0 +1,18 @@
+Servidor web vs servidor de aplicaciones
+o Investiga qué hace un servidor web (ej: Nginx, Apache) y en qué se diferencia de un servidor de aplicaciones (ej: Gunicorn, uWSGI).
+2. Protocolo DNS
+o Explica cómo traduce un nombre como reservasrestaurante.com en una dirección IP real.
+3. Modelo vs Vista en Django
+o Describe el rol de cada uno dentro del patrón MVT (Model-View-Template).
+4. HTTPS vs HTTP
+o Explica las ventServidor web vs servidor de aplicaciones
+Un servidor web como Apache o Nginx se encarga de recibir las peticiones HTTP y servir archivos estáticos (HTML, CSS, imágenes). Un servidor de aplicaciones como Gunicorn o uWSGI se encarga de ejecutar el código de la aplicación (por ejemplo, Django o Flask) y procesar la lógica. Generalmente trabajan juntos: el servidor web recibe la petición y se la pasa al servidor de aplicaciones.
+
+Protocolo DNS
+El DNS traduce un nombre de dominio como reservasrestaurante.com en una dirección IP real. Cuando escribo la dirección en el navegador, este consulta al servidor DNS y obtiene la IP del servidor donde está alojada la página. Así el navegador sabe a qué computadora conectarse.
+
+Modelo vs Vista en Django
+El Modelo define la estructura de los datos y cómo se guardan en la base de datos. La Vista recibe las peticiones, obtiene los datos necesarios (normalmente desde el modelo) y devuelve una respuesta al usuario, usando una plantilla si corresponde.
+
+HTTPS vs HTTP
+La diferencia es que HTTPS cifra la comunicación con TLS. Eso protege los datos sensibles (como contraseñas o información personal) de que alguien los intercepte o modifique. Por eso es más seguro que HTTP y es lo recomendado en cualquier sistema donde los clientes envían datos privados.ajas de usar HTTPS en un sistema donde los clientes envían datos sensibles.
